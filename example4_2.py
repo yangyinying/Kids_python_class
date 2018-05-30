@@ -31,3 +31,9 @@ new_msg = ''
 for c in msg:
     newChar = chr(ord(c)+1)
     print(newChar)
+
+def test_file(filename):
+    f = open(filename, "w+")
+    f.write("Hello")
+
+test_file("temp.txt")
